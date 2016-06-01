@@ -84,8 +84,10 @@
 </div><!-- .fixed-nav -->
 
 <header id="masthead" class="site-header" role="banner">
-	<div id="tabzilla">
-		<a href="https://mozilla.org/" data-link-type="nav" data-link-name="tabzilla">Mozilla</a>
+	<div class="container">
+		<div id="tabzilla">
+			<a href="https://mozilla.org/" data-link-type="nav" data-link-name="tabzilla">Mozilla</a>
+		</div>
 	</div>
 	<!-- Site title and logo -->
 	<div class="site-title-wrap">

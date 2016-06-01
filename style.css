@@ -23,6 +23,22 @@ http://codex.wordpress.org/Child_Themes
 
 /* Add your CSS customizations below this line */
 
+.container {
+	width: 1000px;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		width: 760px;
+	}
+}
+
+@media (max-width: 760px) {
+	.container {
+		width: 100%;
+	}
+}
+
 .site-header {
 	border-top: solid 2px #fff;
 }
