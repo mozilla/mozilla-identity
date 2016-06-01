@@ -50,6 +50,18 @@ http://codex.wordpress.org/Child_Themes
 	z-index: 11;
 }
 
+#tabzilla::before {
+	position: absolute;
+	display: block;
+	left: 28px;
+	top: 0;
+	width: 88px;
+	height: 26px;
+	content: '';
+	background-color: #0c99d5;
+	z-index: 1;
+}
+
 #tabzilla a {
 	position: relative;
 	display: block;
