@@ -23,3 +23,28 @@ http://codex.wordpress.org/Child_Themes
 
 /* Add your CSS customizations below this line */
 
+.site-header {
+	border-top: solid 2px #fff;
+}
+
+#tabzilla {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 11;
+}
+
+#tabzilla a {
+	position: relative;
+	display: block;
+	width: 147px;
+	height: 37px;
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: url("images/tabzilla-static-high-res.png");
+	background-repeat: no-repeat;
+	background-size: 147px 37px;
+	z-index: 2;
+	color: #0073aa;
+}
