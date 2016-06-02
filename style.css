@@ -70,9 +70,16 @@ http://codex.wordpress.org/Child_Themes
 	text-indent: 120%;
 	white-space: nowrap;
 	overflow: hidden;
-	background-image: url("images/tabzilla-static-high-res.png");
+	background-image: url("images/tabzilla-static.png");
 	background-repeat: no-repeat;
 	background-size: 147px 37px;
 	z-index: 2;
 	color: #0073aa;
 }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    #tabzilla a {
+        background-image: url("images/tabzilla-static-high-res.png");
+    }
+}
+
