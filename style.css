@@ -74,7 +74,6 @@ http://codex.wordpress.org/Child_Themes
 	background-repeat: no-repeat;
 	z-index: 2;
 	color: #c13832;
-	outline: none;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
