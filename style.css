@@ -23,6 +23,10 @@ http://codex.wordpress.org/Child_Themes
 
 /* Add your CSS customizations below this line */
 
+body {
+	font-family: 'Fira Sans';
+}
+
 .container {
 	width: 1000px;
 }
@@ -83,3 +87,83 @@ http://codex.wordpress.org/Child_Themes
 	}
 }
 
+.main-navigation {
+	display: none;
+}
+
+.sub-banner {
+	font-size: 12px;
+	margin: auto;
+	background-color: #f8f8f8;
+	border-bottom: solid 1px #e4e4e4;
+}
+
+.description {
+	padding: 15px 0 30px;
+	max-width: 730px;
+	margin: auto;
+}
+
+.description a {
+	text-decoration: underline;
+}
+
+.timeline {
+	padding-top: 70px;
+}
+
+.timeline-progress {
+    max-width: 600px;
+    height: 4px;
+    position: relative;
+    margin: 1.5rem auto;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.timeline-progress-completion {
+	background-color: #3a5e6b;
+	width: 25%;
+	height: 100%;
+    border-radius: 5px;
+}
+
+.timeline-progress-percentage {
+	position: absolute;
+    top: -3px;
+    text-align: center;
+}
+
+.timeline-progress-percentage span {
+	color: #9B9B9B;
+}
+
+.timeline-chevron {
+	border-color: #ccc;
+	height: 10px;
+	width: 10px;
+	border-style: solid;
+	border-width: 4px 4px 0 0;
+	transform: rotate(45deg);
+}
+
+.timeline-active .timeline-chevron {
+	border-color: #3a5e6b;
+}
+
+.timeline-phase {
+	position: absolute;
+    left: -45px;
+    width: 100px;
+    bottom: 20px;
+    color: #9B9B9B;
+}
+
+.timeline-active .timeline-phase {
+	color: #4A4A4A;
+}
+
+.timeline-phase span {
+	display: block;
+	margin-top: -5px;
+}
