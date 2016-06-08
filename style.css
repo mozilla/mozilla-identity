@@ -58,7 +58,7 @@ http://codex.wordpress.org/Child_Themes
 	width: 88px;
 	height: 26px;
 	content: '';
-	background-color: #0c99d5;
+	background-color: #c13832;
 	z-index: 1;
 }
 
@@ -73,7 +73,7 @@ http://codex.wordpress.org/Child_Themes
 	background-image: url("images/tabzilla-static.png");
 	background-repeat: no-repeat;
 	z-index: 2;
-	color: #0073aa;
+	color: #c13832;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
