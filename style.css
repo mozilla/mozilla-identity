@@ -220,3 +220,114 @@ body {
 	margin-top: -5px;
 	color: #9B9B9B;
 }
+
+#site-info {
+	background: #fff;
+	border-top: 1px solid rgba(0,0,0,.1);
+	color: #bbb;
+	overflow: hidden;
+	padding: 48px 0;
+	font: 12px "Open Sans", sans-serif;
+}
+
+#foot-logo,
+#colophon,
+#nav-meta {
+	float: left;
+	margin-right: 24px;
+	width: 252px;
+}
+
+#site-info a:link,
+#site-info a:visited {
+	color: #67a7d0;
+}
+
+#site-info a:hover,
+#site-info a:focus,
+#site-info a:active {
+	color: #5c94b8;
+}
+
+#site-info ul {
+	list-style: none;
+	margin: 0;
+}
+
+#foot-logo .logo {
+	background: url("images/logo-mozilla-lt.png") 0 0 no-repeat;
+	border: 0;
+	display: block;
+	float: left;
+	height: 26px;
+	-moz-transition: opacity .1s linear;
+	-webkit-transition: opacity .1s linear;
+	transition: opacity .1s linear;
+	opacity: .8;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 92px;
+}
+
+#foot-logo .logo:hover,
+#foot-logo .logo:focus,
+#foot-logo .logo:active {
+	opacity: 1;
+}
+
+#foot-logo .top {
+	left: -999em;
+	position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#site-info .container {
+		padding: 0;
+	}
+
+	#foot-logo,
+	#colophon,
+	#nav-meta {
+		margin: 0 10px 1em 10px;
+		width: 220px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#site-info {
+		padding: 24px 0;
+	}
+
+	#site-info .container {
+		width: 100%;
+	}
+
+	#foot-logo a {
+		clear: both;
+		margin: 0 0 1em;
+	}
+
+	#foot-logo, #colophon, #nav-meta {
+		clear: both;
+		float: none;
+		margin: 0 20px 1em;
+		-moz-transition: width .5s ease-out;
+		-webkit-transition: width .5s ease-out;
+		transition: width .5s ease-out;
+		width: auto;
+	}
+
+	#foot-logo .top:link,
+	#foot-logo .top:visited,
+	#foot-logo .top:hover,
+	#foot-logo .top:focus,
+	#foot-logo .top:active {
+		background: rgba(0, 0, 0, 0);
+		border: 0;
+		display: block;
+		padding: 0;
+		position: static;
+		text-align: inherit;
+		width: auto;
+	}
+}
