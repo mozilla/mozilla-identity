@@ -12,6 +12,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -113,6 +114,12 @@
 			'fallback_cb'    => 'wp_page_menu'
 		) );?>
 	</nav><!-- .main-navigation -->
+
+	<!-- Get the timeline -->
+	<div class="sub-banner">
+		<?php include 'sub-banner.php'; ?>
+	</div>
+
 </header><!-- #masthead -->
 
 <div id="page" class="hfeed site">
