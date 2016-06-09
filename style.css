@@ -255,7 +255,7 @@ body {
 }
 
 #foot-logo .logo {
-	background: url("images/logo-mozilla-lt.png") 0 0 no-repeat;
+	background: url("images/footer-mozilla-logo.png") 0 0 no-repeat;
 	border: 0;
 	display: block;
 	float: left;
@@ -267,6 +267,13 @@ body {
 	overflow: hidden;
 	text-indent: -999em;
 	width: 92px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+	#foot-logo .logo {
+		background: url("images/footer-mozilla-logo-high-res.png") 0 0 no-repeat;
+		background-size: 93px;
+	}
 }
 
 #foot-logo .logo:hover,
