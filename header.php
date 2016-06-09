@@ -114,6 +114,8 @@
 			'fallback_cb'    => 'wp_page_menu'
 		) );?>
 	</nav><!-- .main-navigation -->
+
+	<!-- Get the timeline -->
 	<div class="sub-banner">
 		<?php include 'sub-banner.php'; ?>
 	</div>

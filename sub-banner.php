@@ -1,20 +1,20 @@
 <div class="container">
 	<div class="timeline">
-		<div class="timeline-progress">
-			<div class="timeline-progress-completion" style="width: 14.5%;"></div>
-			<div class="timeline-progress-percentage timeline-active" style="margin-left: 13%;">
+		<div class="timeline-progress timeline-phase-1">
+			<div class="timeline-progress-completion"></div>
+			<div class="timeline-progress-percentage phase-1">
 				<div class="timeline-chevron"></div>
 				<div class="timeline-phase">Creative Strategy<span>JUNE</span></div>
 			</div>
-			<div class="timeline-progress-percentage" style="margin-left: 38%;">
+			<div class="timeline-progress-percentage phase-2">
 				<div class="timeline-chevron"></div>
 				<div class="timeline-phase">Concepting<span>JULY</span></div>
 			</div>
-			<div class="timeline-progress-percentage" style="margin-left: 62%;">
+			<div class="timeline-progress-percentage phase-3">
 				<div class="timeline-chevron"></div>
 				<div class="timeline-phase">Refinement<span>SEPTEMBER</span></div>
 			</div>
-			<div class="timeline-progress-percentage" style="margin-left: 87%;">
+			<div class="timeline-progress-percentage phase-4">
 				<div class="timeline-chevron"></div>
 				<div class="timeline-phase">Guidance<span>SEPTEMBER</span></div>
 			</div>

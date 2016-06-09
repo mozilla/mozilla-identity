@@ -113,29 +113,83 @@ body {
 }
 
 .timeline-progress {
-    max-width: 600px;
-    height: 4px;
-    position: relative;
-    margin: 1.5rem auto;
-    background-color: #ccc;
-    border-radius: 5px;
+	max-width: 600px;
+	height: 4px;
+	position: relative;
+	margin: 1.5rem auto;
+	background-color: #ccc;
+	border-radius: 5px;
 }
 
 .timeline-progress-completion {
 	background-color: #3a5e6b;
 	width: 25%;
 	height: 100%;
-    border-radius: 5px;
+	border-radius: 5px;
+}
+
+.timeline-phase-1 .timeline-progress-completion {
+	width: 14.5%;
+}
+
+.timeline-phase-2 .timeline-progress-completion {
+	width: 39.5%;
+}
+
+.timeline-phase-3 .timeline-progress-completion {
+	width: 63.5%;
+}
+
+.timeline-phase-4 .timeline-progress-completion {
+	width: 88.5%;
+}
+
+.phase-1 {
+	margin-left: 13%;
+}
+
+.phase-2 {
+	margin-left: 38%;
+}
+
+.phase-3 {
+	margin-left: 62%;
+}
+
+.phase-4 {
+	margin-left: 87%;
+}
+
+.timeline-phase-1 .phase-1 .timeline-chevron,
+.timeline-phase-2 .phase-1 .timeline-chevron,
+.timeline-phase-2 .phase-2 .timeline-chevron,
+.timeline-phase-3 .phase-1 .timeline-chevron,
+.timeline-phase-3 .phase-2 .timeline-chevron,
+.timeline-phase-3 .phase-3 .timeline-chevron,
+.timeline-phase-4 .phase-1 .timeline-chevron,
+.timeline-phase-4 .phase-2 .timeline-chevron,
+.timeline-phase-4 .phase-3 .timeline-chevron,
+.timeline-phase-4 .phase-4 .timeline-chevron {
+	border-color: #3a5e6b;
+}
+
+.timeline-phase-1 .phase-1 .timeline-phase,
+.timeline-phase-2 .phase-1 .timeline-phase,
+.timeline-phase-2 .phase-2 .timeline-phase,
+.timeline-phase-3 .phase-1 .timeline-phase,
+.timeline-phase-3 .phase-2 .timeline-phase,
+.timeline-phase-3 .phase-3 .timeline-phase,
+.timeline-phase-4 .phase-1 .timeline-phase,
+.timeline-phase-4 .phase-2 .timeline-phase,
+.timeline-phase-4 .phase-3 .timeline-phase,
+.timeline-phase-4 .phase-4 .timeline-phase {
+	color: #4A4A4A;
 }
 
 .timeline-progress-percentage {
 	position: absolute;
-    top: -3px;
-    text-align: center;
-}
-
-.timeline-progress-percentage span {
-	color: #9B9B9B;
+	top: -3px;
+	text-align: center;
 }
 
 .timeline-chevron {
@@ -147,23 +201,22 @@ body {
 	transform: rotate(45deg);
 }
 
-.timeline-active .timeline-chevron {
-	border-color: #3a5e6b;
-}
-
 .timeline-phase {
 	position: absolute;
-    left: -45px;
-    width: 100px;
-    bottom: 20px;
-    color: #9B9B9B;
+	left: -45px;
+	width: 100px;
+	bottom: 20px;
+	color: #9B9B9B;
 }
 
-.timeline-active .timeline-phase {
-	color: #4A4A4A;
+@media (max-width: 360px) {
+	.timeline-phase {
+		font-size: 10px;
+	}
 }
 
 .timeline-phase span {
 	display: block;
 	margin-top: -5px;
+	color: #9B9B9B;
 }
