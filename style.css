@@ -43,6 +43,11 @@ body {
 	}
 }
 
+.site-title a,
+.site-description {
+	color: #c13832;
+}
+
 .site-title,
 .site-description {
 	font-family: "Fira Sans";
