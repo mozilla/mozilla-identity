@@ -14,4 +14,18 @@ function baseline_parent_theme_style() {
 	// Child theme styles
 	wp_enqueue_style( 'baseline-child-style', get_stylesheet_directory_uri(). '/style.css' );
 }
+
+/**
+ * Remove versioning number after css
+ */
+function remove_css_ver( $src ) {
+    if( strpos( $src, '?ver=' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+}
+
 add_action( 'wp_enqueue_scripts', 'baseline_parent_theme_style' );
+
+add_filter( 'style_loader_src', 'remove_css_ver', 1000 );
+
+?>
