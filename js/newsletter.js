@@ -2,19 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-$(function() {
+;(function() {
     'use strict';
 
     // !! this file assumes only one signup form per page !!
-
     var newsletterForm = document.getElementById('newsletter_form');
     // only do this if there's a form on the page
     if(!newsletterForm) {
         return;
-    } else {
-        console.log('working');
     }
-    var newsletterWrapper = window.vs.utils.closestByClass(newsletterForm, 'newsletter');
+    var newsletterWrapper = document.getElementById('newsletter_wrapper');
 
     // add listener if form is collapsed
     if(newsletterWrapper.classList.contains('js-collapse')) {
@@ -59,7 +56,7 @@ $(function() {
 
         // if this is an inline form
         if(newsletterWrapper.classList.contains('newsletter-inline')) {
-            var sectionBody = window.vs.utils.closestByClass(newsletterForm, 'section_body');
+            var sectionBody = document.getElementById('text-2');
             // move the thanks up to the section level
             sectionBody.insertBefore(thanks, sectionBody.firstChild);
             // hide the other stuff in the section
@@ -105,9 +102,11 @@ $(function() {
                 if (response.success === true) {
                     newsletterForm.style.display = 'none';
                     newsletterThanks();
+                    /*
                     if(window.vs.analytics) {
                         window.vs.analytics.trackEvent({ category: 'signup', action: 'newsletter', label: String(newsletter) });
                     }
+                    */
                 }
                 else {
                     if(response.errors) {
@@ -144,4 +143,5 @@ $(function() {
     if(newsletterForm){
         newsletterForm.addEventListener('submit', newsletterSubscribe, false);
     }
-});
+
+})();
