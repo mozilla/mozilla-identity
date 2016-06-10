@@ -16,7 +16,7 @@
 			</div>
 			<div class="timeline-progress-percentage phase-4">
 				<div class="timeline-chevron"></div>
-				<div class="timeline-phase">Guidance<span>SEPTEMBER</span></div>
+				<div class="timeline-phase">Guidelines<span>NOVEMBER</span></div>
 			</div>
 		</div>
 	</div>
