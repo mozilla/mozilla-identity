@@ -43,6 +43,72 @@ body {
 	}
 }
 
+.site-title a,
+.site-description {
+	color: #c13832;
+}
+
+.site-title,
+.site-description {
+	font-family: "Fira Sans";
+}
+
+.site-title {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.site-description {
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	display: block;
+}
+
+.site-title-wrap {
+	padding: 4%;
+	border-bottom: solid 1px #ccc;
+	background-color: #fff;
+	min-height: 154px;
+	padding-top: 56px;
+}
+
+.titles-wrap {
+	background-color: rgba(255,255,255,.6);
+	padding: 2% 0;
+	margin: auto;
+	max-width: 380px;
+}
+
+@media (min-width: 460px) {
+	.site-title {
+		font-size: 2.8em;
+	}
+	.site-description {
+		font-size: 1.8em;
+	}
+	.site-title-wrap {
+		min-height: 230px;
+		padding-top: 56px;
+	}
+	.titles-wrap {
+		max-width: 1050px;
+	}
+}
+
+@media (min-width: 760px) {
+	.site-title {
+		font-size: 3.4em;
+	}
+	.site-description {
+		font-size: 2.3em;
+	}
+	.site-title-wrap {
+		min-height: 100%;
+		padding-top: 4%;
+	}
+}
+
 .site-header {
 	border-top: solid 2px #fff;
 }
