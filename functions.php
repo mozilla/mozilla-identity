@@ -24,8 +24,15 @@ function remove_css_ver( $src ) {
     return $src;
 }
 
-add_action( 'wp_enqueue_scripts', 'baseline_parent_theme_style' );
+/**
+ * Add newsletter.js
+ */
+function add_newsletter_js () {
+    wp_register_script('newsletter', get_stylesheet_directory_uri().'/js/newsletter.js', array('jquery'));
+    wp_enqueue_script('newsletter');
+}
 
 add_filter( 'style_loader_src', 'remove_css_ver', 1000 );
+add_action( 'wp_enqueue_scripts', 'baseline_parent_theme_style' ,'add_newsletter_js');
 
 ?>

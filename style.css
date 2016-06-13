@@ -412,3 +412,61 @@ textarea,
 		width: auto;
 	}
 }
+
+.newsletter_errors {
+	display: none; /* hide by default */
+}
+
+.newsletter_promise {
+	display: block;
+	font-size: 14px;
+}
+
+.newsletter_thanks {
+	display: none;
+}
+
+#newsletter_email label {
+	display: block;
+	padding: 10px 0;
+}
+
+#newsletter_privacy label {
+	font-size: 11px;
+}
+
+.newsletter-inline input[type=email],
+.newsletter-inline input[type=email] .button {
+	width: 100%;
+}
+
+#newsletter_submit .button {
+	margin-top: 20px;
+}
+
+#newsletter_submit .newsletter_promise {
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+/* hide the newsletter selection */
+#newsletter_options {
+	display: none;
+}
+
+.js-collapse #newsletter_privacy,
+.js-collapse .newsletter_promise {
+	 display: none;
+}
+
+@media(min-width:680px) {
+	.newsletter:not(.newsletter-inline) {
+		min-height: 50vh;
+	}
+}
+
+@media(min-width:680px) {
+	.newsletter:not(.newsletter-inline) {
+		min-height: 45vh;
+	}
+}
