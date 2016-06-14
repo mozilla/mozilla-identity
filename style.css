@@ -25,6 +25,7 @@ http://codex.wordpress.org/Child_Themes
 
 body,
 .fixed-toggle,
+.sort-list,
 h1,
 h2,
 h3,
@@ -38,7 +39,8 @@ textarea,
 .button,
 .comment-navigation a,
 .entry-large .entry-title,
-.entry-header .entry-title {
+.entry-large .entry-title,
+.page .entry-header .entry-title {
 	font-family: 'Fira Sans';
 }
 
@@ -431,8 +433,26 @@ textarea,
 	padding: 10px 0;
 }
 
+#newsletter_privacy {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+}
+
 #newsletter_privacy label {
-	font-size: 11px;
+	display: block;
+	font-size: 12px;
+	float: left;
+	line-height: 18px;
+	padding-left: 5px;
+	width: 95%;
+}
+
+.newsletter-inline input[type="checkbox"] {
+	display: block;
+	float: left;
+	margin: 3px 0;
+	width: 5%;
 }
 
 .newsletter-inline input[type=email],
