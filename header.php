@@ -116,7 +116,7 @@
 
 	<!-- Get the timeline -->
 	<div class="sub-banner">
-		<?php include 'sub-banner.php'; ?>
+		<?php dynamic_sidebar( 'timeline' ); ?>
 	</div>
 
 </header><!-- #masthead -->

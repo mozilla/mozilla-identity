@@ -25,6 +25,22 @@ function remove_css_ver( $src ) {
 }
 
 /**
+ * Register custome timeline sidebar
+ */
+function custom_sidebars() {
+
+	$args = array(
+		'id'            => 'timeline',
+		'class'         => 'project-timeline',
+		'name'          => __( 'Project Timeline', 'text_domain' ),
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'custom_sidebars' );
+
+
+/**
  * Add newsletter.js
  */
 function add_newsletter_js () {
