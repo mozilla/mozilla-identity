@@ -452,7 +452,7 @@ textarea,
 	display: block;
 	float: left;
 	margin: 3px 0;
-	width: 5%;
+	width: 12px;
 }
 
 .newsletter-inline input[type=email],
