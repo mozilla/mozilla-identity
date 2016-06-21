@@ -180,13 +180,13 @@ textarea,
 	margin-right: 0;
 }
 
-.description {
-	padding: 15px 0 30px;
-	max-width: 730px;
+.sub-banner .description {
+	padding: 15px 15px 30px;
+	max-width: 760px;
 	margin: auto;
 }
 
-.description a {
+.sub-banner .description a {
 	text-decoration: underline;
 }
 
