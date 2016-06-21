@@ -116,9 +116,17 @@
 
 	<!-- Get the timeline -->
 	<div class="sub-banner">
-		<div class="container">
-		<?php dynamic_sidebar( 'timeline' ); ?>
-		</div>
+		<ul>
+		<?php
+			/* Capture output of sidebar widgets */
+			ob_start();
+			dynamic_sidebar( 'timeline' );
+			$timeline_content = ob_get_clean();
+
+			/* Replace placeholder with base blog url */
+			echo str_replace( '{{blogurl}}', get_bloginfo('url'), $timeline_content );
+		?>
+		</ul>
 	</div>
 
 </header><!-- #masthead -->
