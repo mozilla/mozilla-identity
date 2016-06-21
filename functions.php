@@ -25,7 +25,7 @@ function remove_css_ver( $src ) {
 }
 
 /**
- * Register custome timeline sidebar
+ * Register custom timeline sidebar
  */
 function custom_sidebars() {
 
