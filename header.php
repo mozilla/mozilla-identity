@@ -116,7 +116,7 @@
 
 	<!-- Get the timeline -->
 	<div class="sub-banner">
-		<ul>
+		<ul class="container">
 		<?php
 			/* Capture output of sidebar widgets */
 			ob_start();

@@ -174,15 +174,15 @@ textarea,
 	border-bottom: solid 1px #e4e4e4;
 }
 
-.sub-banner > ul {
+.sub-banner > .container {
 	list-style-type: none;
-	margin-left: 0;
-	margin-right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sub-banner .description {
-	padding: 15px 15px 30px;
-	max-width: 760px;
+	padding: 15px 0 30px;
+	max-width: 730px;
 	margin: auto;
 }
 
