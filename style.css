@@ -174,13 +174,19 @@ textarea,
 	border-bottom: solid 1px #e4e4e4;
 }
 
-.description {
+.sub-banner > .container {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sub-banner .description {
 	padding: 15px 0 30px;
 	max-width: 730px;
 	margin: auto;
 }
 
-.description a {
+.sub-banner .description a {
 	text-decoration: underline;
 }
 
